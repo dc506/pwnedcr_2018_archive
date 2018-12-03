@@ -1,0 +1,202 @@
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+      <title>PwnedCR CON 2018</title>
+<style type="text/css">
+body {  background: black;  margin: 60px 0 0 30px;  color: white;  font-weight: 400;  font-size: 10px;  font-family: monospace;}
+a { color: lime; }
+.glitch {  color: lime;  font-size: 20px;  position:relative;  white-space: pre;  display:inline-block;  line-height: 80%;  margin: 0 auto;}
+@keyframes noise-anim {  0% {    clip: rect(83px, 9999px, 23px, 0);  }  5% {    clip: rect(20px, 9999px, 74px, 0);  }  10% {    clip: rect(70px, 9999px, 77px, 0);  }  15.0% {    clip: rect(83px, 9999px, 85px, 0);  }  20% {    clip: rect(50px, 9999px, 18px, 0);  }  25% {    clip: rect(36px, 9999px, 59px, 0);  }  30.0% {    clip: rect(38px, 9999px, 14px, 0);  }  35% {    clip: rect(92px, 9999px, 41px, 0);  }  40% {    clip: rect(20px, 9999px, 22px, 0);  }  45% {    clip: rect(44px, 9999px, 7px, 0);  }  50% {    clip: rect(88px, 9999px, 50px, 0);  }  55.0% {    clip: rect(78px, 9999px, 89px, 0);  }  60.0% {    clip: rect(42px, 9999px, 73px, 0);  }  65% {    clip: rect(91px, 9999px, 17px, 0);  }  70% {    clip: rect(59px, 9999px, 64px, 0);  }  75% {    clip: rect(55px, 9999px, 61px, 0);  }  80% {    clip: rect(85px, 9999px, 42px, 0);  }  85.0% {    clip: rect(100px, 9999px, 24px, 0);  }  90% {    clip: rect(56px, 9999px, 45px, 0);  }  95% {    clip: rect(86px, 9999px, 62px, 0);  }  100% {    clip: rect(86px, 9999px, 47px, 0);  }}
+.glitch:after {  content: attr(data-text);  position: absolute;  left: 2px;  text-shadow: -1px 0 blue;  top: 0;  /*color: white;  background: black;*/ overflow: hidden;  clip: rect(0, 1000px, 0, 0);  animation: noise-anim 1s infinite linear alternate-reverse;}
+@keyframes noise-anim-2 {  0% {    clip: rect(50px, 9999px, 70px, 0);  }  5% {    clip: rect(80px, 9999px, 10px, 0);  }  10% {    clip: rect(1px, 9999px, 62px, 0);  }  15.0% {    clip: rect(82px, 9999px, 40px, 0);  }  20% {    clip: rect(32px, 9999px, 63px, 0);  }  25% {    clip: rect(63px, 9999px, 31px, 0);  }  30.0% {    clip: rect(15px, 9999px, 39px, 0);  }  35% {    clip: rect(17px, 9999px, 52px, 0);  }  40% {    clip: rect(66px, 9999px, 59px, 0);  }  45% {    clip: rect(3px, 9999px, 58px, 0);  }  50% {    clip: rect(56px, 9999px, 28px, 0);  }  55.0% {    clip: rect(90px, 9999px, 91px, 0);  }  60.0% {    clip: rect(94px, 9999px, 97px, 0);  }  65% {    clip: rect(18px, 9999px, 79px, 0);  }  70% {    clip: rect(59px, 9999px, 37px, 0);  }  75% {    clip: rect(35px, 9999px, 83px, 0);  }  80% {    clip: rect(51px, 9999px, 57px, 0);  }  85.0% {    clip: rect(28px, 9999px, 63px, 0);  }  90% {    clip: rect(98px, 9999px, 55px, 0);  }  95% {    clip: rect(69px, 9999px, 94px, 0);  }  100% {    clip: rect(56px, 9999px, 1px, 0);  }}
+.glitch:before {  content: attr(data-text);  position: absolute;  left: -2px;  text-shadow: 1px 0 lime;  top: 0;  /*color: white;  background: black;*/ overflow: hidden;  clip: rect(0, 900px, 0, 0);  animation: noise-anim-2 3s infinite linear alternate-reverse;}
+.header { width: fit-content; }
+.header p{ text-align: center; }
+#content { font-size: 13px; }
+#title { font-size: 25px; }
+tr { vertical-align: initial; }
+table { margin-top: 30px; }
+b {color: lightgreen !important;}
+</style>
+    </head>
+    <body>
+<div class="header">
+<pre class="glitch" data-text="      :::::::::  :::       ::: ::::    ::: :::::::::: :::::::::   ::::::::  :::::::::
+     :+:    :+: :+:       :+: :+:+:   :+: :+:        :+:    :+: :+:    :+: :+:    :+:
+    +:+    +:+ +:+       +:+ :+:+:+  +:+ +:+        +:+    +:+ +:+        +:+    +:+
+   +#++:++#+  +#+  +:+  +#+ +#+ +:+ +#+ +#++:++#   +#+    +:+ +#+        +#++:++#:
+  +#+        +#+ +#+#+ +#+ +#+  +#+#+# +#+        +#+    +#+ +#+        +#+    +#+
+ #+#         #+#+# #+#+#  #+#   #+#+# #+#        #+#    #+# #+#    #+# #+#    #+#
+###          ###   ###   ###    #### ########## #########   ########  ###    ###      ">      :::::::::  :::       ::: ::::    ::: :::::::::: :::::::::   ::::::::  :::::::::
+     :+:    :+: :+:       :+: :+:+:   :+: :+:        :+:    :+: :+:    :+: :+:    :+:
+    +:+    +:+ +:+       +:+ :+:+:+  +:+ +:+        +:+    +:+ +:+        +:+    +:+
+   +#++:++#+  +#+  +:+  +#+ +#+ +:+ +#+ +#++:++#   +#+    +:+ +#+        +#++:++#:
+  +#+        +#+ +#+#+ +#+ +#+  +#+#+# +#+        +#+    +#+ +#+        +#+    +#+
+ #+#         #+#+# #+#+#  #+#   #+#+# #+#        #+#    #+# #+#    #+# #+#    #+#
+###          ###   ###   ###    #### ########## #########   ########  ###    ###
+</pre><br>
+<p style="float:right;margin-right:75px;">UNDERGROUND COSTA RICA CON 2018</p>
+</div>
+<div id="content" style="width: 80%;margin-bottom:50px;">
+<table>
+  <tbody>
+    <tr><br><br>
+<pre id="title" class="glitch" data-text="D0ND3"> donde:</pre><span> Universidad Cenfotec, Montes de Oca, SJ (<a href="//goo.gl/maps/9EtwQWVyNsF2">map</a>)</span><br>
+<pre id="title" class="glitch" data-text="CU4ND0">cuando:</pre><span> 07:30 AM., 1 de Diciembre, 2018.</span><br>
+<pre id="title" class="glitch" data-text="C0M=">  como:</pre><span> <a href="//www.eventbrite.com/e/pwnedcr-2018-tickets-51557934169">Registrate</a></span><br>
+    </tr>
+    <tr>
+      <td>
+<pre>
+,+-----------+.
+| <pre id="title" class="glitch" data-text="4G3ND4">AGENDA</pre>
+`+-----------+´
+|
+\
+.`-----> <b>[07:30 - 08:00]</b> Registro
+|
+\
+.`-----> <b>[08:00 - 08:50]</b> Threat Hunting usando el framework MITRE ATT&CK - Michael Hidalgo
+\
+.`-----> <b>[08:50 - 09:40]</b> The Ten <strike><i>Crack</i></strike>Hack Commandments - <a href="https://twitter.com/thecedricz">cedric</a>
+|
+\
+.`-----> <b>[09:40 - 10:00]</b> Break
+|
+\
+.`-----> <b>[10:00 - 10:50]</b> Pentesting en Sistemas Autónomos con Python - Randall Barnett
+\
+.`-----> <b>[10:50 - 11:40]</b> Malware Bancario - <a href="//twitter.com/bit_tico">Josué Rodríguez</a>
+|
+\
+.`-----> <b>[11:40 - 13:00]</b> Almuerzo
+|
+\
+.`-----> <b>[13:00 - 13:50]</b> Bot Attacks - Alex Vargas
+\
+.`-----> <b>[13:50 - 14:40]</b> Introducción a la Computación Cuántica - Tomas de Camino
+|
+\
+.`-----> <b>[14:40 - 15:00]</b> Break
+|
+\
+.`-----> <b>[15:00 - 15:50]</b> Android Penetration Testing - <a href="//securitygrind.com">Cristian Rodriguez</a>
+\
+.`-----> <b>[15:50 - 16:40]</b> Marco Jurídico de Delitos Informáticos - Roberto Lemaitre
+|
+\
+.`-----> <b>[16:40 - 17:00]</b> Premiaciones - DC506 Staff
+
+</pre>
+</td>
+<td>
+<pre style="text-align: right;"><br><br>
+
+
+
+.+---------------+.
+<pre id='title' class="glitch" data-text="T4LL3R3$">TALLERES</pre> |
+`+---------------+´
+|
+/
+Taller de GNU/Linux - Ari Mora & Manuel Delgado <b>[13:00 - 14:30]</b> <-----´.
+/
+Taller de <a href="//parrotsec.org/">Parrotsec</a> - r0r0x <b>[14:30 - 16:30]</b> <-----´.
+</pre><br><br><br><br>
+<pre style="text-align: right;">
+.+-----------+.
+<pre id='title' class="glitch" data-text="st4nd$">STANDS</pre> |
+`+-----------+´
+|
+/
+Bad USB - Elias Orozco <b>[∞]</b> <-----´.
+/
+Información General - CPIC <b>[∞]</b> <-----´.
+/
+¡Registro para Giftcards de Amazon! - WhiteJaguars <b>[∞]</b> <-----´.
+/
+Locksport/Lockpicking - cedric <b>[∞]</b> <-----´.
+/
+Merchandising DC506 y PwnedCR <b>[∞]</b> <-----´.
+</pre>
+</td>
+</tr>
+</tbody>
+</table><br><br>
+<pre>
+                                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                  ¡<b>RIFAS, PREMIOS Y SORPRESAS DURANTE TODO EL EVENTO ;)</b>!
+                                  ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+</pre>
+
+<pre>
+,+---------------+.
+| <pre id="title" class="glitch" data-text="t4ll3r3s">TALLERES</pre>
+`+---------------+´
+
+<b>ATENCIÓN:</b> Para registrarse a los talleres deberá también registrarse al evento.
+^^^^^^^^^</pre>
+<pre>
+  .----------------------------------------------------------------------------------.
+.´ <b>[13:00 - 14:30]</b> Taller de GNU/Linux
+|  <b>Encargados:</b> Ari Mora & Manuel Delgado.
+|  <b>Requisitos:</b>
+|             0x0) BYOD - Se les solicita a los participantes traer su propio equipo.
+|             0x1) Distribución GNU/Linux preinstalada.
+|
+|  <a href="//goo.gl/forms/kEF01UBpLNxIcXN53">Registrarme</a>
+`+-----------------------------------------------------------------------------------´
+</pre>
+<pre>
+  .-----------------------------------------------------------------------------------------------------.
+.´ <b>[14:30 - 16:30]</b> Taller de Parrotsec
+|  <b>Encargados:</b> r0r0x
+|  <b>Requisitos:</b>
+|             0x0) Traer su propio equipo (laptop).
+|             0x1) Virtual box instalado (<a href="https://www.virtualbox.org/wiki/Downloads">link</a>).
+|             0x2) ISO de Parrot Security OS versión security de 32 bits debidamente descargada (<a href="https://parrotsec.org/download.php">link</a>).
+|             0x3) Maquina virtual Metasploitable v2 (<a href="https://sourceforge.net/projects/metasploitable/files/latest/download">link</a>).
+|
+|  <a href="//docs.google.com/forms/d/e/1FAIpQLSfQ_7uvDfeyQc4Dvv1QHOGBjSWcO5Rk4sFsHs18HmUrFetPDg/viewform">Registrarme</a>
+`+------------------------------------------------------------------------------------------------------´
+</pre>
+<pre>
+,+------------------------------+.
+| <pre id="title" class="glitch" data-text="c4ptur3_Th3_fl4g">CAPTURE THE FLAG</pre>
+`+------------------------------+´
+</pre>
+<pre>
+  .---------------------------------------------------------------------------------------------------------------------------------.
+.´ <b>Encargados:</b> cedric & rottenpie.
+|  <b>Challenges:</b>
+|               (+) Crypto, Reversing, Forensics & Stego: Disponibles a las 08 hs. del día 29 de Noviembre para descargar <a href="challenges">AQUÍ</a>.
+|               (+) Web: Disponibles on-site en el evento.
+|
+|  <b>Reglas: </b>Scoreboard e infraestructura de PwnedCR está fuera de objectivo y se descalifica a cualquiera que lo intente.
+|        Se puede trabajar en equipo pero molestar y compartir flags está prohibido ya que solo una persona podrá llevarse el premio.
+|        En caso de empate, PwnedCR staff avaluará una forma de desempate.
+|
+|  <b>¿Cómo participar?: </b>¡Los challenges serán publicados y abiertos próximamente!
+|  <b>Premios: </b>
+|               (+) 1er lugar: <a href="//github.com/dc506/dc506_2018_badge">Badge de DC506</a>
+|               (+) 2do lugar: <a href="//nostarch.com/blackhatpython">Black Hat Python</a>
+|               (+) 3er lugar: <a href="//www.amazon.com/Blue-Team-Field-Manual-BTFM/dp/154101636X">BTFM (Blue Team Field Manual)</a>
+`+---------------------------------------------------------------------------------------------------------------------------------´
+</pre>
+<br>
+<pre>
+[-+-] <pre id="title" class="glitch" data-text="c0nt4ct0" style="font-size: 13px;">contacto:</pre> <b>pwnedcr AT protonmail DOT com</b>
+</pre><br>
+<pre>
+,+--------------+.
+| <pre id="title" class="glitch" data-text="sp0ns0r5">SPONSORS</pre>
+`+--------------+´
+</pre><br><br>
+<pre style="width: 80%;text-align:center;">
+<a href="http://thugcrowd.com/"><img src='thugcrowd.jpeg' width="420" height="150" /></a> <a href="//www.whitejaguars.com/"><img src='wj.png' width="600" height="130" /></a>
+<a href="//www.fsecurityacademy.com/"><img src='fsec.jpeg' width="400" height="180" /></a> <a href="//crcibernetica.com/"><img src='crcibernetica.png' width="520" style="padding-bottom: 5vh;"/></a>
+<a href="//www.cpic.or.cr"><img  style="margin-bottom: 4vh;" src='cpic.png'/></a> <a href="//www.ucenfotec.ac.cr/"><img src='cenfo.png'  style="margin-right: 6vh;"/></a>
+</div>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/-iEl7OKrLGI?autoplay=1" frameborder="0" allow="autoplay; encrypted-media;"></iframe>
+    </body>
+</html>
