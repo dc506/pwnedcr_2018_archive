@@ -32,7 +32,7 @@ Este proyecto consta de cuatro niveles de dificultad y diferentes retos por cada
 1. Nightmare!
 2. Nightmare 2!
 
-##Proceso de instalación
+# Proceso de instalación
 ## Prerequisitos
 * Se debe tener instalado PHP en Apache o NGinX
 * MySQL configurado intencionalmente de forma insegura con el usuario: root y password: root
