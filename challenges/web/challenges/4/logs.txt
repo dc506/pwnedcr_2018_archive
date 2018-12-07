@@ -1,0 +1,4 @@
+Registro de eventos
+===================
+De momento esta vacío
+FIN
